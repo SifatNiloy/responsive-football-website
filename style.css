@@ -48,13 +48,21 @@ h1{
 /*-----------------
  players in box styles
 ---------------------------*/
-.players{
+.container{
+    display: flex;
+    justify-content: center;
     
+}
+
+.players{
+    width: 1050px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px; 
     margin-top: 70px;
+    margin-bottom: 165px;
+    
     
     
 }
@@ -82,50 +90,52 @@ h1{
     highlights-area styles
 --------------------------
 */
-.highlights-area{
+#highlights-area{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 70px 0px;
     grid-column-gap: 66px;
 }
-.highlights-info h1{
+#highlights-info h1{
     font-size: 48px;
     color: #0A0826;
     margin: 0;
 }
-.highlights-info p.watch-now{
-    margin-top: 24px;
-}
-.highlights-info a{
-    text-decoration: none;
-    background-color: #E02C6D;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    font-weight: 500;
-}
-.highlights-info .fa-arrow-right{
-    margin-left: 8px;
-}
-.highlights-thumbnail img{
+
+
+#highlights-thumbnail img{
     width: 567px;
     height: 427px;
 }
 
-/* footer styles
+/*-------------------
+ footer styles
 ------------------------ */
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* width: 484px; */
     margin-top: 158px;
     margin-bottom: 63px;
     
 }
-
-.fav{
+footer img{
+    height: 110px;
+    width: 484px;
+}
+#font-awesome{
+    width: 170px;
+    height: 32px;
+    margin:0px 156px; 
+    
+}
+.fab{
+    
+    border-radius: 50%;
     height: 32px;
     width: 32px;
+ 
 }
 #copyright{
     font-size: 18px;
+    width: 236px;
+    margin-left: 124px;
 }
