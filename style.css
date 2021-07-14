@@ -12,45 +12,48 @@ body{
 ----------------- */
 #top-part{
     display: flex;
+    
     background-color: #2D25A0;
     height: 677px;
-    margin-top: 0px;
+    
 }
-
 
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
     color: #FFFFFF;
 }
-#left-half{
+.half-width{
     width: 50%;
     margin-left: 156px;
     margin-top: 153px;
     
 }
-#right-half{
-    width: 50%;
-    margin-top: 153px;
-    
-}
+
 .link-button{
     text-decoration: none;
     color: #FFFFFF;
     background-color: #E02C6D;
-    width: 168px;
-    height: 44px;
+    width: 88px;
+    height: 24px;
+    padding: 10px 24px;
     
+}
+.fa-arrow-right{
+    color: #FFFFFF;
+    
+    padding-left: 8px;
 }
 
 /*-----------------
  players in box styles
 ---------------------------*/
 .players{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 27px;
+    grid-row-gap: 27px; 
     margin-top: 70px;
     
     
@@ -59,6 +62,7 @@ h1{
     padding: 15px;
     width: 330px;
     height: 474px;
+    
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     
 }
@@ -69,8 +73,42 @@ h1{
     padding: 16px 0px 10px 0px;
  }
 .player img{
+    
     width: 300px;
     height: 256px;
+}
+ /*
+--------------------------
+    highlights-area styles
+--------------------------
+*/
+.highlights-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px 0px;
+    grid-column-gap: 66px;
+}
+.highlights-info h1{
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0;
+}
+.highlights-info p.watch-now{
+    margin-top: 24px;
+}
+.highlights-info a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.highlights-info .fa-arrow-right{
+    margin-left: 8px;
+}
+.highlights-thumbnail img{
+    width: 567px;
+    height: 427px;
 }
 
 /* footer styles
