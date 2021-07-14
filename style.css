@@ -16,14 +16,18 @@ body{
 /* =================
 first section
 ----------------- */
- #top-part{
+#top-part{
     
     height: 677px;
     background-color: #2D25A0;
     padding-top: 153px;
    
 }
-
+#top-part img:hover {
+    transform: translateX(-20%) translateY(-2.5%);
+    transition: transform 1.5s ease-out ;
+  }
+  
 #top-section{
     display: flex;
     justify-content: center;
@@ -209,27 +213,24 @@ footer img{
 
 
 @media only screen and (max-width:688px) {
-    #top-part{
-        width: 360px;
-        height: 695px;
-        position: absolute;
-       
+    body {
+        width: 100%;
+      }
+    #top-part{ 
+        position: absolute; 
     }
     #top-section{
         display: flex;
         flex-direction: column;
-     
     }
     #top-part h1{
         
-        font-size: 36px;
-        
+        font-size: 36px; 
         font-weight: 700;
     }
     .half-width{
         
         margin-left: 15px;
-   
     }
     #top-part img{
         margin-top: 50px;
@@ -238,22 +239,22 @@ footer img{
     }
     .container{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
  
     .players{
-        
+        margin-top: 850px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 24px; 
+        
+    }
+    .player{
+        padding: 15px;
+           
     }
     #main-news{
         display: flex;
         flex-direction: column;
-        
-        
     }
         
     #recent-videos{
