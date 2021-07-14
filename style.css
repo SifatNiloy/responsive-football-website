@@ -13,9 +13,9 @@ body{
     margin: 0px 0px;
 }
 
-/* =================
+/* ==================================
 first section
------------------ */
+====================================== */
 #top-part{
     
     height: 677px;
@@ -26,8 +26,8 @@ first section
 #top-part img:hover {
     transform: translateX(-20%) translateY(-2.5%);
     transition: transform 1.5s ease-out ;
-  }
-  
+}
+ 
 #top-section{
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ TOP NEWS
 
     max-width: 320px;
 }
-/* ----------
+/* ================
 -----video -----
 ================= */
 #news-video{
@@ -209,16 +209,21 @@ footer img{
     margin-left: 124px;
     
 }
-/* media queries
+/* ----------------
+----media queries-----
 ------------------------ */
-
+/* Mobile devices */
 
 @media only screen and (max-width:688px) {
     body {
         width: 100%;
-      }
+        margin: auto auto;
+    } 
     #top-part{ 
         position: absolute; 
+        width: 360px;
+        height: 695px;
+        
     }
     #top-section{
         display: flex;
@@ -237,14 +242,21 @@ footer img{
         margin-top: 50px;
         max-width: 329px;
         max-height: 260px;
+        
+    }
+    #top-part img:hover {
+        transform: translateX(-15%) translateY(-5%);
+        transition: transform 2s ease-out ;
     }
     .container{
         display: flex;
         flex-direction: column; 
+        padding-right: auto;
+        margin-left: auto;
     }
  
     .players{
-        margin-top: 850px;
+        margin-top: 875px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         
@@ -267,3 +279,7 @@ footer img{
     } 
     
 }
+
+/*=================================================
+ mediaquery responsive done for mobile devices
+================================================= */
