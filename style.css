@@ -3,6 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 body{
     
     margin: 0px 0px;
@@ -10,18 +15,26 @@ body{
 
 /* first section
 ----------------- */
-#top-part{
+ #top-part{
     display: flex;
     
     background-color: #2D25A0;
     height: 677px;
     
-}
-
-h1{
+} 
+/* #top-part{
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+} */
+#top-part h1{
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
     color: #FFFFFF;
+    font-weight: 700;
 }
 .half-width{
     width: 50%;
@@ -80,6 +93,11 @@ h1{
     margin: 0;
     padding: 16px 0px 10px 0px;
  }
+.player p{
+    color:  #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
 .player img{
     
     width: 300px;
@@ -90,6 +108,12 @@ h1{
     highlights-area styles
 --------------------------
 */
+#highlight{
+    text-align: center;
+    width: 100%;
+    
+    
+}
 #highlights-area{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -100,12 +124,63 @@ h1{
     font-size: 48px;
     color: #0A0826;
     margin: 0;
+    /* width: 466px;
+    height: 309px; */
 }
 
 
 #highlights-thumbnail img{
     width: 567px;
     height: 427px;
+}
+
+/* ------------
+TOP NEWS
+---------------------- */
+#top-news{
+    text-align: center;
+}
+#top-news h2{
+    font-size: 50px;
+    color: orange;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+#top-news p{
+    font-size: 30px;
+}
+#main-news{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    
+}
+
+#main-news img{
+    width: 100%;
+}
+
+.box{
+
+    max-width: 320px;
+}
+/* video 
+================= */
+#news-video{
+    margin-top: 200px;
+    text-align: center;
+}
+#news-video h1{
+    font-size: 50px;
+}
+#news-video p{
+    font-size: 30px;
+}
+#recent-videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    grid-row-gap: 50px;
 }
 
 /*-------------------
