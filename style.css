@@ -43,15 +43,16 @@ h1{
     
 }
 
-/* main
-------------- */
+/*-----------------
+ players in box styles
+---------------------------*/
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     margin-top: 70px;
-    margin-left: 180px;
+    
     
 }
 .player{
@@ -63,7 +64,10 @@ h1{
 }
 .player h2{
     font-size: 28px;
-}
+    color: #18191F;
+    margin: 0;
+    padding: 16px 0px 10px 0px;
+ }
 .player img{
     width: 300px;
     height: 256px;
